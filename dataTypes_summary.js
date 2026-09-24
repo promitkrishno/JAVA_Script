@@ -47,3 +47,23 @@ console.log( typeof bigNumber); // bigint
 console.log( typeof heros); // object
 console.log( typeof myObj); // object
 console.log( typeof myFunction); // function
+
+// Momory allocation for primitive data types is done in stack memory and for non-primitive data types is done in heap memory.
+
+let myName = "Promit Krishno Sarker"; // string
+let anotherName = myName; // anotherName is a copy of myName
+anotherName="Shukto";
+console.log(myName, anotherName); // Promit Krishno Sarker Promit Krishno Sarker
+console.log( anotherName); // Shukto
+
+
+let userOne={
+    email:"userone@example.com",
+    id:"0242310005101154"
+
+}
+
+let userTwo=userOne; // userTwo is a reference to userOne
+userTwo.email="usertwo@example.com";
+console.log(userOne.email); // userone@example.com
+console.log(userTwo.email); // usertwo@example.com
